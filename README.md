@@ -1,7 +1,7 @@
 # Vue全家桶高仿网易云音乐
 功能最多，按照ios客户端高仿，还有小程序版嘞
 
->原作者[sqaiyan](https://github.com/sqaiyan/netmusic-node),此Vue版本是在此基础上二次优化
+>原作者[sqaiyan](https://github.com/sqaiyan/neteasemusic),此Vue版本是在此基础上二次优化
 
 ## 技术栈
 1. Vue全家桶(vue,vue-router,vuex)
