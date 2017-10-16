@@ -13,8 +13,8 @@
 ## 优化内容
 
 ## 项目地址, 欢迎 star，issue
-+ [Vue版](https://github.com/sqaiyan/neteasemusic) ：https://github.com/sqaiyan/neteasemusic
-+ [](https://github.com/sqaiyan/netmusic-app) ：https://github.com/sqaiyan/netmusic-app
++ [Vue版](https://github.com/Jesonhu/music163_frontend/) ：https://github.com/Jesonhu/music163_frontend/
++ [](https://github.com/sqaiyan/netmusic-app)
 + [node后端](https://github.com/Jesonhu/music163_nodejs) ：https://github.com/Jesonhu/music163_nodejs
 
 
