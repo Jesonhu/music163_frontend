@@ -14,7 +14,7 @@
 
 ## 项目地址, 欢迎 star，issue
 + [Vue版](https://github.com/Jesonhu/music163_frontend/) ：https://github.com/Jesonhu/music163_frontend/
-+ [](https://github.com/sqaiyan/netmusic-app)
+[](https://github.com/sqaiyan/netmusic-app)
 + [node后端](https://github.com/Jesonhu/music163_nodejs) ：https://github.com/Jesonhu/music163_nodejs
 
 
@@ -24,12 +24,12 @@
 
 ``` bash
 # 克隆node后端代码到本地
-git clone git@github.com:Jesonhu/music163_frontend.git
+git clone https://github.com/Jesonhu/music163_nodejs
 
-cd music163_frontend
+cd music163_nodejs
 
 # install dependencies
-npm install 
+npm install
 
 # serve at localhost:3000
 node app.js
@@ -38,6 +38,9 @@ node app.js
 ### 前台项目
 
 ``` bash
+# 切换到git vue分支
+git checkout vue
+
 # install dependencies
 npm install
 
