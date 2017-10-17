@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router';
-Vue.use(Router)
+Vue.use(Router);
+
+/**
+ * 每个路由 name 值说明
+ * @attr {} 'search' 筛选页面
+ * @attr {} 'simi' 
+ * @attr {} 'login' 登录页面
+ */
 var router = new Router({
 	routes: [
 		{

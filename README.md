@@ -11,6 +11,7 @@
 5. 图片资源来自ios端解压缩文件
 
 ## 优化内容
+[ ] 页面切换效果
 
 ## 项目地址, 欢迎 star，issue
 + [Vue版](https://github.com/Jesonhu/music163_frontend/) ：https://github.com/Jesonhu/music163_frontend/

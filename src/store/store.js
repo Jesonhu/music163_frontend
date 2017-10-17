@@ -1,7 +1,11 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import api from '@/api';
-import u from "@/utils"
+import u from "@/utils";
+
+import routerAnimation from './module/routerDirection'
+import user from './module/user'
+
 // Vue.use(Vuex);
 import { Toast } from 'mint-ui';
 export default new Vuex.Store({
@@ -182,6 +186,7 @@ export default new Vuex.Store({
 			state.music = res;
 		},
 		setuplaylist(state, res) {
+			console.log('init data');
 			res = res.filter((i) => {
 				return i.creator.userId == state.user.account.id;
 			})
@@ -252,13 +257,11 @@ export default new Vuex.Store({
 				commit('setmusic_url', res.data.data[0].url);
 			})
 		},
-		async getlike({
-			commit,
-			state
-		}) { // 获取红心歌曲，用户创建的歌单列表
+		async getlike({	commit, state }){ // 获取红心歌曲，用户创建的歌单列表
 			api.likeall().then(res => {
 				commit("setlikeall", (res.data.ids || []).join(","))
 			});
+			console.log(state.user.account);
 			state.user.account && (await api.user_playlist(state.user.account.id, 0).then(res => {
 				commit("setuplaylist", res.data.playlist || [])
 			}))
@@ -290,10 +293,7 @@ export default new Vuex.Store({
 				})
 			})
 		},
-		async localuser({
-			state,
-			commit
-		}) {
+		async localuser({state, commit}) {
 			await api.mine().then(res => {
 				commit("localuser", res.data)
 			})
@@ -317,5 +317,8 @@ export default new Vuex.Store({
 				}
 			})
 		}
+	},
+	modules: {
+		routerAnimation
 	}
 })

@@ -2,7 +2,7 @@
   "name": "vue-net",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "aiyaninfrbao <sqaiyan@126.com>",
+  "author": "jesonhu <Jesonhu_web@163.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

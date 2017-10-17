@@ -1,3 +1,8 @@
+/**
+ * axios 请求地址组合
+ * 
+ * @explain 1 由于main.js中axios已经进行了默认配置(请求域，超时)等配置，这里直接写请求的剩余地址
+ */
 import axios from "axios"
 let limit = 20;
 export default {

@@ -1,6 +1,9 @@
 <template>
 	<div class="form-common">
 		<mt-header fixed title="登录">
+				<router-link to="/" slot="left">
+          <mt-button icon="back"></mt-button>
+        </router-link>
 		</mt-header>
 		<form @submit.prevent="login">
 			<div class="formc-cnt">
@@ -12,7 +15,7 @@
 				<input type="password" v-model="pwd" required maxlength="20" />
 			</div>
 			<div>
-				<mt-button type="danger" v-bind:class="{'is-disabled':(!name||!pwd||loading)}" size="large">登录</mt-button>
+				<mt-button type="danger" class="submit" v-bind:class="{'is-disabled':(!name||!pwd||loading)}" size="large">登录</mt-button>
 			</div>
 		</form>
 	</div>
@@ -48,7 +51,7 @@
 						return;
 					}
 					logined=true;
-					localStorage.setItem("user", JSON.stringify(res.data.i));
+					// localStorage.setItem("user", JSON.stringify(res.data.i));
 					//localStorage.setItem("cookie", res.data.c);
 					this.$store.commit("localuser", res.data.i)
 					this.$store.dispatch('getlike');
@@ -72,7 +75,7 @@
 		padding: .5em 0
 	}
 	
-	.form-common button {
+	.form-common button.submit {
 		margin-top: 2em;
 		background-color: #d43c33;
 	}
